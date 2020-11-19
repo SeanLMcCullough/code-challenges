@@ -60,25 +60,29 @@ export default {
         slot: 'step-0',
         available: true,
         completed: false,
-        invalid: false
+        invalid: false,
+        tooltip: 'Your personal details'
       },
       {
         slot: 'step-1',
         available: false,
         completed: false,
-        invalid: false
+        invalid: false,
+        tooltip: 'How do we get in touch?'
       },
       {
         slot: 'step-2',
         available: false,
         completed: false,
-        invalid: false
+        invalid: false,
+        tooltip: 'What do you want to know about?'
       },
       {
         slot: 'step-3',
         available: false,
         completed: false,
-        invalid: false
+        invalid: false,
+        tooltip: 'Tell as about you!'
       },
     ],
     step: 0,
@@ -97,7 +101,7 @@ export default {
         this.steps[next].available = true
         this.step = next
       }
-    },
+    }
   }
 }
 </script>

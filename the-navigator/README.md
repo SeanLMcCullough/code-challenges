@@ -6,6 +6,11 @@ My goal here was to keep the separation of concerns between application implemen
 
 External libraries include Font Awesome's official Vue bundle, and Vuelidate for form validation. Standard CSS and Javascript are used to keep things simple.
 
+**Things not implemented**
+
+- Any form of data fetching or sending
+- Persisted state for forms (they will clear out after changing steps)
+
 ## Project setup
 ```
 npm install
