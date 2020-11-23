@@ -18,6 +18,7 @@ The math for the fibonacci calculations uses linear time algorithms.
 Clone the repository and run the program.
 
 ```sh
+npm install
 npm start
 ```
 
