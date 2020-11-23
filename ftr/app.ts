@@ -24,7 +24,7 @@ export default async function run () {
     const { input } = await prompts({
       type: 'text',
       name: 'input',
-      message: `Please enter the ${numbers.keys.length ? 'next' : 'first'} number`
+      message: `Please enter the ${numbers.size ? 'next' : 'first'} number`
     })
     if (input === 'quit') {
       halt()
@@ -44,5 +44,8 @@ export default async function run () {
 }
 
 function printNumbers () {
-  console.log(numbers)
+  const counts = Array.from(numbers.entries())
+    .sort(([a, x], [b, y]) => y - x)
+    .map(([k, v]) => `${k}:${v}`)
+  console.log(counts.join(', '))
 }
