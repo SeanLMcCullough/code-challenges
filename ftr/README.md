@@ -13,6 +13,20 @@ The math for the fibonacci calculations uses linear time algorithms.
 - Jest
 - [prompts](https://www.npmjs.com/package/prompts)
 
+## Usage
+
+Clone the repository and run the program.
+
+```sh
+npm start
+```
+
+To run unit tests:
+
+```sh
+npm run test
+```
+
 ## Acceptance criteria
 
 - [x] The program outputs provided numbers at an interval provided by the user
